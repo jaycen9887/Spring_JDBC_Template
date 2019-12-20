@@ -3,6 +3,7 @@
 
 ## Project structure 
 
+```
 |--src
 
 	|--main
@@ -49,6 +50,7 @@
 		|--resources
 		
 			**application.properties
+```
 							
 ### Run Template as is
 
