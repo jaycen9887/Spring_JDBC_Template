@@ -10,22 +10,22 @@
 |	|	|--com/jdbc/template
 |	|	|	**SpringJdbcTemplateApplication.java
 |	|	|	|--config
-|	|	|	|	**JdbcConfig.java
+|	|	|	|   **JdbcConfig.java
 |	|	|	|--dao
-|	|	|	|	|--impl
-|	|	|	|	|	**EmployeeDAOImpl.java
-|	|	|	|	|--models
-|	|	|	|	|	**EmployeeDAO.java
+|	|	|	|   |--impl
+|	|	|	|   |   **EmployeeDAOImpl.java
+|	|	|	|   |--models
+|	|	|	|   |   **EmployeeDAO.java
 |	|	|	|--errorHandlers
-|	|	|	|	**CustomSQLErrorCodeTranslator.java
+|	|	|	|   **CustomSQLErrorCodeTranslator.java
 |	|	|	|--mapper
-|	|	|	|	**EmployeeRowMapper.java
+|	|	|	|   **EmployeeRowMapper.java
 |	|	|	|--models
-|	|	|	|	**Employee.java
+|	|	|	|   **Employee.java
 |	|	|	|--services
-|	|	|	|	**EmpoyeeTest.java
+|	|	|	|   **EmpoyeeTest.java
 |	|--resources
-|		**application.properties
+|	|   **application.properties
 ```
 							
 ### Run Template as is
