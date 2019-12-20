@@ -4,28 +4,50 @@
 ## Project structure 
 
 |--src
+
 	|--main
+	
 		|--java
+		
 			|--com
-				|--jdbc	
+			
+				|--jdbc
+				
 					|--template
+					
 						**SpringJdbcTemplateApplication.java
+						
 						|--config
+						
 							**JdbcConfig.java
+							
 						|--dao
+						
 							|--impl
+							
 								**EmployeeDAOImpl.java
+								
 							|--models
+							
 								**EmployeeDAO.java
+								
 						|--errorHandlers
+						
 							**CustomSQLErrorCodeTranslator.java
+							
 						|--mapper
+						
 							**EmployeeRowMapper.java
+							
 						|--models
+						
 							**Employee.java
+							
 						|--services
+						
 							**EmpoyeeTest.java
 		|--resources
+		
 			**application.properties
 							
 ### Run Template as is
@@ -60,26 +82,24 @@ a. The EmployeeTest class [com.jdbc.template.services] simply just saves a singl
 ```java
 @Service
 public class EmployeeTest {
-	
+
 	@Autowired
 	EmployeeDAO employeeDAO;
-	
+
 	@PostConstruct
 	public void test() {
-		
-		Employee emp1 = new Employee([ID HERE], "[NAME HERE]", "[ROLE HERE]");
-		
+
+		Employee emp1 = new Employee(0, "[NAME HERE]", "[ROLE HERE]");
+
 		int output = employeeDAO.save(emp1);
-		
-		if(output != 0) {
+
+		if (output != 0) {
 			System.out.println("Employee " + emp1.getName() + " was saved successfully with id: " + emp1.getId());
 		} else {
 			System.out.println("Employee " + emp1.getName() + "with id: " + emp1.getId() + " could not be saved.");
 		}
-		
 	}
 }
-
 ```
 
 	The @PostConstruct annotation just executes the "test" method after all dependencies injections have been completed. 
