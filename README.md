@@ -5,27 +5,26 @@
 
 ```
 |--src/main/
-|	
-|	|--java
-|	|	|--com/jdbc/template
-|	|	|	**SpringJdbcTemplateApplication.java
-|	|	|	|--config
-|	|	|	|   **JdbcConfig.java
-|	|	|	|--dao
-|	|	|	|   |--impl
-|	|	|	|   |   **EmployeeDAOImpl.java
-|	|	|	|   |--models
-|	|	|	|   |   **EmployeeDAO.java
-|	|	|	|--errorHandlers
-|	|	|	|   **CustomSQLErrorCodeTranslator.java
-|	|	|	|--mapper
-|	|	|	|   **EmployeeRowMapper.java
-|	|	|	|--models
-|	|	|	|   **Employee.java
-|	|	|	|--services
-|	|	|	|   **EmpoyeeTest.java
-|	|--resources
-|	|   **application.properties
+|   |--java
+|   |   |--com/jdbc/template
+|   |   |	**SpringJdbcTemplateApplication.java
+|   |   |	|--config
+|   |   |	|   **JdbcConfig.java
+|   |   |	|--dao
+|   |   |	|   |--impl
+|   |   |	|   |   **EmployeeDAOImpl.java
+|   |   |	|   |--models
+|   |   |	|   |   **EmployeeDAO.java
+|   |   |	|--errorHandlers
+|   |   |	|   **CustomSQLErrorCodeTranslator.java
+|   |   |	|--mapper
+|   |   |	|   **EmployeeRowMapper.java
+|   |   |	|--models
+|   |   |	|   **Employee.java
+|   |   |	|--services
+|   |   |	|   **EmpoyeeTest.java
+|   |--resources
+|   |   **application.properties
 ```
 							
 ### Run Template as is
